@@ -7,7 +7,7 @@
 ## Penjelasan
 
 ### Perubahan pada Function initGL
-```
+```js
 let loadedImages = 0; // To keep track of loaded images
     for (let i = 0; i < 6; i++) {
         img[i] = new Image();
@@ -40,7 +40,7 @@ let loadedImages = 0; // To keep track of loaded images
 Kode di atas digunakan untuk memuat gambar-gambar yang akan digunakan sebagai tekstur dalam WebGL. Kode ini menggunakan perulangan untuk menginisialisasi dan memuat gambar ke dalam array "img". Saat setiap gambar selesai dimuat, sebuah fungsi handler "onload" dipanggil. Dalam fungsi handler ini, objek tekstur WebGL diciptakan dan dihubungkan dengan gambar yang sesuai. Gambar tersebut kemudian dijadikan tekstur dalam WebGL, dan setiap kali gambar selesai dimuat, variabel "loadedImages" akan ditingkatkan. Ketika semua gambar telah dimuat (sejumlah 6 gambar), maka fungsi "draw()" akan dipanggil, memungkinkan penggambaran objek 3D menggunakan tekstur yang telah dimuat sebelumnya. Ini adalah cara yang efisien untuk mengelola pemrosesan asinkron gambar sebelum menggambar objek dalam WebGL.
 
 ## Perubahan pada Function Draw
-```   
+```js   
     drawSquare(textureObjects[0]);  // front face
     mat4.rotateY(modelview, modelview, Math.PI/2);
     drawSquare(textureObjects[1]);  // right face
