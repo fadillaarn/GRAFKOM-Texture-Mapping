@@ -53,7 +53,7 @@ let loadedImages = 0; // To keep track of loaded images
 
 ## Output 
 
-### Left and Rifgt Face
+### Left and Right Face
 <img width="1680" alt="Screenshot 2023-10-31 at 12 03 13" src="https://github.com/fadillaarn/GRAFKOM-Texture-Mapping/assets/91003946/bd8a27b7-0e74-4657-8a52-0d39949a2281">
 
 ### Bottom Face
